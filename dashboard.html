@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Signup Koraplus</title>
+  <title>Dashboard Koraplus</title>
     <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,12 +32,16 @@
           <button type="button" class="btn btn-success"><a href="login.html">Login</a></button>
         </div>
       </nav>
-
-    <!-- Material form register -->
+<div>
+        <h5 class="card-header info-color white-text text-center py-4">
+                <strong>Application Status</strong>
+            </h5>   
+</div>
+    <!-- Material form for application -->
 <div class="card">
 
         <h5 class="card-header info-color white-text text-center py-4">
-            <strong>Signup</strong>
+            <strong>Leave Application Form</strong>
         </h5>
     
         <!--Card content-->
@@ -48,43 +52,27 @@
                 <div class="form-row">
                     <div class="col">
                       <br>
-                      <!-- First Name -->
-                <div class="md-form mt-0">
-                    <input type="email" id="fi" class="form-control">
-                    <label for="materialRegisterFormFirstName">First Name</label>
-                </div>
-
-                <!-- Last Name -->
-                <div class="md-form mt-0">
-                    <input type="email" id="materialRegisterFormLastName" class="form-control">
-                    <label for="materialRegisterFormLastName">Last Name</label>
-                </div>
-
-                <!-- Department -->
-                <div class="md-form mt-0">
-                    <input type="email" id="materialRegisterFormDepartment" class="form-control">
-                    <label for="materialRegisterFormDepartment">Department</label>
-                </div>
-
-                <!-- E-mail -->
                 <div class="md-form mt-0">
                     <input type="email" id="materialRegisterFormEmail" class="form-control">
                     <label for="materialRegisterFormEmail">E-mail</label>
                 </div>
-    
-                <!-- Password -->
                 <div class="md-form">
-                    <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
-                    <label for="materialRegisterFormPassword">Password</label>
-                    <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                        At least 8 characters
-                    </small>
+                    <input id="materialRegisterFormLeaveType" class="form-control">
+                    <label for="materialRegisterFormLeaveType">Leave Type</label>
                 </div>
-
-                <!-- Sign up button -->
-    <!-- Button trigger modal -->
-<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-        Signup
+                <br>
+                <div class="md-form" id="element1">
+                    <input type="date">
+                    <label>Leave Start Date</label>
+                </div>
+                <div class="md-form" id="element2">
+                    <input type="date">
+                    <label>Leave End Date</label>
+                </div>
+                <br> <br>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        Apply
       </button>
       
       <!-- Modal -->
@@ -92,32 +80,65 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Registered!</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Application Submitted!</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-            Proceed to login
+              Check Dashboard in 48hrs to confirm application status
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success"><a href="login.html">Login</a></button>
+              <button type="button" class="btn btn-success">Save changes</button>
             </div>
           </div>
         </div>
       </div>
-                <hr>
-    
-                <!-- Terms of service -->
-                <p>By clicking <strong>signup</strong> you agree to our terms of service</p>
-    
+                <!-- <button type="button" class="btn btn-success"><a href="applicationSuccess.html">Apply</a></button>
+                <hr> -->
             </form>
         </div>
     
     </div>
-    <script src="jquery-3.4.1.js"></script>
-<script>"bootstrap.js"</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+   
+   <script> 
+   $(document).ready(function () {
+
+$('form').on('submit', function(e){
+    e.preventDefault();
+    let firstName = $('#firstName').val();
+    let lastName = $('#lastName').val();
+    let department = $('#department').val();
+    let emailAddress = $('#emailAddress').val();
+    let password = $('#password').val();
+    console.log(firstName)
+    console.log(lastName)
+    console.log(department)
+    console.log(emailAddress)
+    console.log(password)
+    $.ajax({
+        url: "http://localhost:3000/users", 
+        success: function (result) {
+            // $("#div1").html(result);
+            console.log(result)
+        },
+        method: "POST",
+        data: {
+            firstName,
+            lastName,
+            department,
+            emailAddress,
+            password
+        }
+    });
+})
+
+});
+   </script> 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     

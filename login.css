@@ -5,10 +5,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#content {
-    text-align: center;
+/* #content {
     padding: 20%;
-}
+    border-radius: 50px;
+} */
 
 
 .btn.btn-success>a {
@@ -16,6 +16,9 @@ body {
     color: #fff;
 }
 
-.navbar-brand {
-    font-size: 25px
-}
+/* #loginBorder {
+    background-color: #42eb64;
+    text-align: center;
+    padding: 100px;
+    border-radius: 50px;
+} */

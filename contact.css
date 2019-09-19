@@ -1,0 +1,10 @@
+.btn.btn-success>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.home {
+    background-image: url('architectural-design-architecture-building-417352.jpg');
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
