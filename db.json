@@ -1,8 +1,202 @@
 {
-    "users": [
-      { "id": 1, "firstName": "Akinade", "lastName": "Akinadeniyi", "department":"Administrative", "emailAddress":"heykay7@gmail.com", "password":"decagon"}
-    ],
-    "leaveApplication": [
-      { "id": 1, "emailAddress":"heykay7@gmail.com", "leaveType": "Annual leave", "startDate":"20-09-2019", "endDate":"01-12-2019"}
-    ]
-}   
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Akinade",
+      "lastName": "Akinadeniyi",
+      "department": "Administrative",
+      "emailAddress": "heykay7@gmail.com",
+      "password": "decagon"
+    },
+    {
+      "firstName": "gjhgjgh",
+      "lastName": "Akinadeniyi",
+      "department": "jcdhhbdh",
+      "emailAddress": "heykay7@gmail.com",
+      "password": "uuhhjhkjjh",
+      "id": 2
+    },
+    {
+      "firstName": "dgdhfjgd",
+      "lastName": "bxnnfkhf",
+      "department": "ndggdgf",
+      "emailAddress": "ggdjgjggggggg@gmail.com",
+      "password": "grhrhr@dgfhf",
+      "id": 3
+    },
+    {
+      "firstName": "gjhgjgh",
+      "lastName": "Akinadeniyi",
+      "department": "jcdhhbdh",
+      "emailAddress": "ggdjgjggggggg@gmail.com",
+      "password": "hjfjttjjjfj",
+      "admin": "false",
+      "id": 4
+    }
+  ],
+  "leaveApplication": [
+    {
+      "id": 1,
+      "emailAddress": "heykay7@gmail.com",
+      "leaveType": "Annual leave",
+      "startDate": "20-09-2019",
+      "endDate": "01-12-2019"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "Maternal",
+      "startDate": "2019-09-20",
+      "endDate": "2019-09-27",
+      "id": 5
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "afffbad",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 6
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "vdahf",
+      "startDate": "2019-09-20",
+      "endDate": "2019-09-30",
+      "id": 7
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "dgfhff",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 8
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "dgfhff",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 9
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "dgfhff",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 10
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "fjgdfhh",
+      "startDate": "2019-09-30",
+      "endDate": "2019-09-21",
+      "id": 11
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "fjgdfhh",
+      "startDate": "2019-09-30",
+      "endDate": "2019-09-21",
+      "id": 12
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "fjgdfhh",
+      "startDate": "2019-09-30",
+      "endDate": "2019-09-21",
+      "id": 13
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leavetype": "fjgdfhh",
+      "startDate": "2019-09-30",
+      "endDate": "2019-09-21",
+      "id": 14
+    },
+    {
+      "emailAddress": "king@gmail.com",
+      "leavetype": "Annual",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 15
+    },
+    {
+      "emailAddress": "king@gmail.com",
+      "leavetype": "Easter",
+      "startDate": "2019-09-20",
+      "endDate": "2019-09-30",
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leaveType": "Paternal",
+      "startDate": "2019-09-20",
+      "endDate": "2019-09-30",
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "emailAddress": "decagon@gmail.com",
+      "leaveType": "Annual",
+      "startDate": "2019-09-20",
+      "endDate": "2019-09-30",
+      "id": 25
+    },
+    {
+      "emailAddress": "decagon@gmail.com",
+      "leaveType": "Annual",
+      "startDate": "2019-09-20",
+      "endDate": "2019-09-30",
+      "id": 26
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leaveType": "Annual",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 27
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leaveType": "Annual",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 28
+    },
+    {
+      "emailAddress": "heykay7@gmail.com",
+      "leaveType": "Annual",
+      "startDate": "2019-09-21",
+      "endDate": "2019-09-30",
+      "id": 29
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dashboard Koraplus</title>
+  <title>Application Form Koraplus</title>
     <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="dashboard.css">
 </head>
@@ -33,7 +33,7 @@
         </div>
       </nav>
 <div>
-        <h5 class="card-header info-color white-text text-center py-4">
+        <h5 class="card-header info-color white-text text-center py-4 pb-3 align-left mbr-fonts-style display-2">
                 <strong>Application Status</strong>
             </h5>   
 </div>
@@ -61,21 +61,21 @@
                     <label for="materialRegisterFormLeaveType">Leave Type</label>
                 </div>
                 <br>
-                <div class="md-form" id="element1">
-                    <input type="date">
+                <div class="md-form">
+                    <input type="date" id="element1">
                     <label>Leave Start Date</label>
                 </div>
-                <div class="md-form" id="element2">
-                    <input type="date">
+                <div class="md-form">
+                    <input type="date" id="element2">
                     <label>Leave End Date</label>
                 </div>
                 <br> <br>
                 <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="apply">
         Apply
       </button>
       
-      <!-- Modal -->
+      <!-- Modal
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -94,52 +94,18 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
                 <!-- <button type="button" class="btn btn-success"><a href="applicationSuccess.html">Apply</a></button>
                 <hr> -->
             </form>
         </div>
     
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   
-   
-   <script> 
-   $(document).ready(function () {
-
-$('form').on('submit', function(e){
-    e.preventDefault();
-    let firstName = $('#firstName').val();
-    let lastName = $('#lastName').val();
-    let department = $('#department').val();
-    let emailAddress = $('#emailAddress').val();
-    let password = $('#password').val();
-    console.log(firstName)
-    console.log(lastName)
-    console.log(department)
-    console.log(emailAddress)
-    console.log(password)
-    $.ajax({
-        url: "http://localhost:3000/users", 
-        success: function (result) {
-            // $("#div1").html(result);
-            console.log(result)
-        },
-        method: "POST",
-        data: {
-            firstName,
-            lastName,
-            department,
-            emailAddress,
-            password
-        }
-    });
-})
-
-});
-   </script> 
-
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+ <script src="./script/applicationform.js"></script>
 </body></html>
